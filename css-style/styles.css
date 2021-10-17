@@ -410,3 +410,58 @@ body {
 .portfolio-button .item + .item {
   margin-left: 8px;
 }
+.mail-icon {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  fill: var(--section-comand-portfolio-navig-text);
+}
+.icon-list {
+  display: block;
+  width: 70px;
+  height: 70px;
+  fill: var(--primary-text-color);
+  margin-left: auto; 
+  margin-right: auto;
+  
+}
+.navig:hover,.mail-icon:hover,
+.mail-icon:focus {
+  fill: var(--link);
+}
+.list-section-first {
+  display: block;
+  width: 270px;
+  background-color: #F5F4FA;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+.social {
+  display: flex;
+  height: 44px;
+padding-left: 0;
+margin-left: 32px;
+margin-right: 32px;
+margin-top: 16px;
+
+margin-bottom: 30px;
+justify-content: space-between;
+align-items: center;
+
+}
+.social-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  fill: var(--section-comand-portfolio-navig-text)
+  }
+.type-button { 
+  height: 44px;
+  width:44px;
+  border-radius: 50%;}
+.type-button:hover, 
+.type-button:focus {
+  background-color: var(--link);
+}
