@@ -121,6 +121,7 @@ body {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  
 }
 
 .site-nav-group .site-nav {
@@ -300,6 +301,7 @@ body {
 .navig-footer-adress:hover,
 .navig-footer:hover {
   color: var(--link);
+  
 }
 
 .button-portfolio {
@@ -312,7 +314,7 @@ body {
   letter-spacing: inherit;
   font-family: "Roboto", sans-serif;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   border: none;
   padding: 6px 22px 6px 22px;
 }
@@ -320,6 +322,8 @@ body {
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--link);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--primary-background-color);
 }
 
 .text-portfolio {
@@ -353,8 +357,9 @@ body {
   padding: 0;
 }
 .section-footer {
-  padding-top: 60px;
   padding-bottom: 60px;
+  padding-right: 70px;
+  margin: 0;
 }
 
 .footer-style .logo1 {
@@ -385,7 +390,11 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   display: block;
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #EEEEEE;
+}
+.portfolio-picture .item-flex:hover, 
+.portfolio-picture .item-flex:focus {
+ 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .item-flex-text {
@@ -425,9 +434,12 @@ body {
   margin-right: auto;
   
 }
-.navig:hover,.mail-icon:hover,
+.mail-icon:hover,
 .mail-icon:focus {
   fill: var(--link);
+}
+.social-icon:hover, .social-icon:hover {
+  fill: var(--primary-background-color);
 }
 .list-section-first {
   display: block;
@@ -452,16 +464,70 @@ align-items: center;
 }
 .social-icon {
   display: block;
+  position: relative;
   width: 20px;
   height: 20px;
   margin: auto;
   fill: var(--section-comand-portfolio-navig-text)
   }
 .type-button { 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   height: 44px;
   width:44px;
-  border-radius: 50%;}
+  border-radius: 50%;
+}
+
 .type-button:hover, 
 .type-button:focus {
   background-color: var(--link);
+  
+}
+.company-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 172px;
+  height: 92px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.company-icon-img {
+  width: 106px;
+  height: 60px;
+
+}
+.company {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+
+}
+.company:hover, .company:focus {
+  fill: var(--link);
+}
+.social-footer {
+  display: flex;
+}
+.social-text-footer {
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--primary-background-color);
+}
+.type-button-footer { 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 44px;
+  width:44px;
+  border-radius: 50%;
+}
+.footer-type {
+  display: flex;
+  padding-top: 60px;
 }
