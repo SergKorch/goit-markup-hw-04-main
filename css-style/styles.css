@@ -68,6 +68,7 @@ body {
 
 .logo1 {
   display: inline-block;
+  margin: 60px;
   margin-right: auto;
   margin-left: 15px;
   color: var(--style-footer-logo);
@@ -138,10 +139,21 @@ body {
 .site-nav-group .item + .item {
   margin-left: 50px;
 }
-.site-nav:hover,
-.site-nav:focus,
+.site-nav:hover , 
+.site-nav:focus , 
 .navig:hover {
   color: var(--link);
+  fill: var(--link);
+ }
+.mail-icon {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  fill: var(--section-comand-portfolio-navig-text);
+}
+.mail-icon:hover,
+.mail-icon:focus {
+  fill: var(--link);
 }
 
 .navig {
@@ -150,13 +162,27 @@ body {
 
 /*Герой раздел*/
 .section-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
   background-color: var(--footer-background-color);
 }
+.section-hero-bg {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+    to right,
+   rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)), 
+   url(../images/bg.jpg); 
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+}
+
 .section-hero-text {
   color: var(--text-hero-footer);
+  padding-top: 200px;
   padding-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -314,7 +340,6 @@ body {
   letter-spacing: inherit;
   font-family: "Roboto", sans-serif;
   border-radius: 4px;
-
   border: none;
   padding: 6px 22px 6px 22px;
 }
@@ -419,12 +444,7 @@ body {
 .portfolio-button .item + .item {
   margin-left: 8px;
 }
-.mail-icon {
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  fill: var(--section-comand-portfolio-navig-text);
-}
+
 .icon-list {
   display: block;
   width: 70px;
@@ -434,13 +454,6 @@ body {
   margin-right: auto;
   
 }
-.mail-icon:hover,
-.mail-icon:focus {
-  fill: var(--link);
-}
-.social-icon:hover, .social-icon:hover {
-  fill: var(--primary-background-color);
-}
 .list-section-first {
   display: block;
   width: 270px;
@@ -448,7 +461,10 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
+
+/*----стилизация соц сетей----------------*/
 .social {
   display: flex;
   height: 44px;
@@ -456,33 +472,44 @@ padding-left: 0;
 margin-left: 32px;
 margin-right: 32px;
 margin-top: 16px;
-
 margin-bottom: 30px;
 justify-content: space-between;
 align-items: center;
-
 }
 .social-icon {
   display: block;
   position: relative;
   width: 20px;
   height: 20px;
-  margin: auto;
   fill: var(--section-comand-portfolio-navig-text)
   }
 .type-button { 
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   height: 44px;
   width:44px;
   border-radius: 50%;
 }
-
-.type-button:hover, 
-.type-button:focus {
-  background-color: var(--link);
-  
+.social-icon:hover, .social-icon:hover {
+    fill: var(--primary-background-color);
+  }
+  .type-button:hover, 
+  .type-button:focus {
+    background-color: var(--link);
+    fill: var(--primary-background-color);
+  }
+/*----------------------------------------------------*/
+/*----стилизация логотипов компаний----------------*/
+.company {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.company-icon-img {
+  fill: #afb1b8;
+  width: 106px;
+  height: 60px;
 }
 .company-icon {
   display: flex;
@@ -490,29 +517,19 @@ align-items: center;
   justify-content: space-evenly;
   width: 172px;
   height: 92px;
-  padding: 0;
-  margin: 0;
   border: 1px solid #AFB1B8;
-  box-sizing: border-box;
   border-radius: 4px;
 }
-.company-icon-img {
-  width: 106px;
-  height: 60px;
-
-}
-.company {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-
-}
-.company:hover, .company:focus {
+.company-icon-img:hover, .company-icon-img:focus, .company-icon:hover, .company-icon:focus {
   fill: var(--link);
+  border-color: var(--link);
 }
+/*
+
 .social-footer {
   display: flex;
 }
+
 .social-text-footer {
 font-size: 14px;
 line-height: 1.14;
@@ -530,4 +547,4 @@ color: var(--primary-background-color);
 .footer-type {
   display: flex;
   padding-top: 60px;
-}
+} */
