@@ -143,7 +143,6 @@ body {
 .site-nav:focus , 
 .navig:hover {
   color: var(--link);
-  fill: var(--link);
  }
 .mail-icon {
   display: inline-block;
