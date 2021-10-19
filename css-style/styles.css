@@ -104,7 +104,8 @@ body {
   margin-bottom: 0;
 }
 .site-nav-contacts .navig {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 .site-nav-contacts .item + .item {
   margin-left: 50px;
@@ -145,10 +146,16 @@ body {
   color: var(--link);
 }
 .mail-icon {
-  display: inline-block;
   width: 16px;
   height: 12px;
-  fill: var(--section-comand-portfolio-navig-text);
+  fill: currentColor;
+  margin-right: 10px;
+}
+.tell-icon {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 .mail-icon:hover,
 .mail-icon:focus {
