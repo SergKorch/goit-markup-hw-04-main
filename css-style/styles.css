@@ -310,7 +310,7 @@ body {
   text-align: center;
 }
 .comand-prof {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -485,11 +485,10 @@ body {
 /*----стилизация соц сетей----------------*/
 .social {
   display: flex;
-
+  height: 44px;
   padding-left: 0;
   margin-left: 32px;
   margin-right: 32px;
-  margin-top: 16px;
   margin-bottom: 30px;
   justify-content: space-between;
   align-items: center;
@@ -503,14 +502,10 @@ body {
 }
 .social-icon:hover,
 .social-icon:focus {
-  display: flex;
-  align-items: center;
   fill: var(--primary-background-color);
   background-color: var(--link);
   border-radius: 50%;
-
 }
-
 /*----стилизация логотипов компаний----------------*/
 .company {
   display: flex;
