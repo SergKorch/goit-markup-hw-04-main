@@ -496,7 +496,8 @@ body {
 }
 
 .social-icon {
- 
+  height: 44px;
+  width: 44px;
   fill: var(--section-comand-portfolio-navig-text);
   padding: 12px 12px 12px 12px;
 }
@@ -507,6 +508,7 @@ body {
   fill: var(--primary-background-color);
   background-color: var(--link);
   border-radius: 50%;
+
 }
 
 /*----стилизация логотипов компаний----------------*/
