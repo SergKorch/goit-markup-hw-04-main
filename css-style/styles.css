@@ -495,30 +495,21 @@ body {
   align-items: center;
 }
 .social-icon {
-  display: block;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  fill: var(--section-comand-portfolio-navig-text);
-}
-.type-button {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   height: 44px;
   width: 44px;
-  border-radius: 50%;
+  fill: var(--section-comand-portfolio-navig-text);
+  padding: 12px 12px 12px 12px;
 }
 .social-icon:hover,
-.social-icon:hover {
+.social-icon:focus {
+  display: flex;
+  align-items: center;
   fill: var(--primary-background-color);
-}
-.type-button:hover,
-.type-button:focus {
   background-color: var(--link);
-  fill: var(--primary-background-color);
+  border-radius: 50%;
+  border-width: 20px;
 }
-/*----------------------------------------------------*/
+
 /*----стилизация логотипов компаний----------------*/
 .company {
   display: flex;
@@ -529,22 +520,20 @@ body {
 }
 .company-icon-img {
   fill: #afb1b8;
-  width: 106px;
-  height: 60px;
+  width: 172px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
 }
 .company-icon {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 172px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
+
 .company-icon-img:hover,
-.company-icon-img:focus,
-.company-icon:hover,
-.company-icon:focus {
+.company-icon-img:focus {
   fill: var(--link);
   border-color: var(--link);
 }
