@@ -475,7 +475,7 @@ body {
 .list-section-first {
   display: block;
   width: 270px;
-  background-color: #f5f4fa;
+  background-color: var(--command-background);
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;
