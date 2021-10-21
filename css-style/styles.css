@@ -513,6 +513,9 @@ body {
   fill: var(--primary-background-color);
   background-color: var(--link);
   border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  padding: 12px 12px 12px 12px;
 }
 
 /*----стилизация логотипов компаний----------------*/
