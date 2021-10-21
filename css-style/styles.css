@@ -483,7 +483,7 @@ body {
 }
 
 /*----стилизация соц сетей----------------*/
-.social {
+ .social {
   display: flex;
   height: 44px;
   padding-left: 0;
